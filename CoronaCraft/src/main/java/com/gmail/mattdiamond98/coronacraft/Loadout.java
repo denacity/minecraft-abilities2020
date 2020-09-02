@@ -7,7 +7,7 @@ import com.gmail.mattdiamond98.coronacraft.abilities.Engineer.SpacetimePortal;
 import com.gmail.mattdiamond98.coronacraft.abilities.Fighter.Omnislash;
 import com.gmail.mattdiamond98.coronacraft.abilities.Gladiator.StormGodsWrath;
 import com.gmail.mattdiamond98.coronacraft.abilities.Ninja.ShadowStride;
-import com.gmail.mattdiamond98.coronacraft.abilities.Ranger.ArrowStorm;
+import com.gmail.mattdiamond98.coronacraft.abilities.Ranger.SlayingArrow;
 import com.gmail.mattdiamond98.coronacraft.abilities.Skirmisher.InstinctiveHunter;
 import com.gmail.mattdiamond98.coronacraft.abilities.Tank.DesolationFist;
 import com.gmail.mattdiamond98.coronacraft.abilities.UltimateAbility;
@@ -19,7 +19,7 @@ import org.bukkit.inventory.ItemStack;
 public enum Loadout {
 
     FIGHTER(Material.DIAMOND_SWORD, new Omnislash()),
-    RANGER(Material.BOW, new ArrowStorm()),
+    RANGER(Material.BOW, new SlayingArrow()),
     ENGINEER(Material.IRON_PICKAXE, new SpacetimePortal()),
     BERSERKER(Material.DIAMOND_AXE, new UndyingFrenzy()),
     SKIRMISHER(Material.CROSSBOW, new InstinctiveHunter()),
@@ -27,7 +27,8 @@ public enum Loadout {
     GLADIATOR(Material.TRIDENT, new StormGodsWrath()),
     TANK(Material.SHIELD, new DesolationFist()),
     ANARCHIST(Material.FLINT_AND_STEEL, new TNTTrail()),
-    WIZARD(Material.BLAZE_ROD, new WizardUltimateAbility());
+    WIZARD(Material.BLAZE_ROD, new WizardUltimateAbility()),
+    REAPER(Material.IRON_HOE, new TNTTrail());
 
     private Material item;
     private UltimateAbility ultimate;
